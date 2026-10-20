@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Bella Vita, where fresh ingredients, authentic flavors, and warm hospitality come together.">
+  <meta name="theme-color" content="#173c2d">
+
+  <title>Bella Vita | A Taste of Something Special</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announcement">
+    <p>Fresh ingredients. Memorable moments. Every day.</p>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+
+      <a href="#home" class="logo" aria-label="Bella Vita home">
+        <span class="logo-mark">B</span>
+        <span class="logo-name">Bella <span>Vita</span></span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#reservation" class="btn btn-primary nav-book">
+        Book a Table <span aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <span class="eyebrow hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          WELCOME TO BELLA VITA
+        </span>
+
+        <h1>
+          Good food.<br>
+          <span>Beautiful moments.</span>
+        </h1>
+
+        <p class="hero-description">
+          Thoughtfully prepared dishes, fresh seasonal ingredients,
+          and a warm atmosphere made for sharing.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">
+            Explore Our Menu <span aria-hidden="true">↗</span>
+          </a>
+
+          <a href="#story" class="btn btn-outline">
+            Discover Our Story
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="hero-note-icon" aria-hidden="true">✳</span>
+          <span>Made with care. Served with love.</span>
+        </div>
+      </div>
+
+      <a href="#story" class="scroll-indicator" aria-label="Scroll to our story">
+        <span></span>
+        SCROLL TO DISCOVER
+      </a>
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro section-padding" id="story">
+      <div class="container intro-grid">
+
+        <div class="intro-image-wrap">
+          <img
+            class="intro-image"
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
+            alt="Beautifully presented meal in an elegant restaurant"
+            loading="lazy">
+
+          <div class="image-caption">
+            <span class="caption-star">✳</span>
+            <span>Thoughtful food, unforgettable moments</span>
+          </div>
+        </div>
+
+        <div class="intro-content">
+          <span class="eyebrow">
+            <span class="eyebrow-line"></span>
+            OUR PHILOSOPHY
+          </span>
+
+          <h2>More than a meal.<br><span>A feeling.</span></h2>
+
+          <p>
+            At Bella Vita, we believe the best meals bring people closer.
+            That's why we focus on quality ingredients, honest flavors,
+            and the little details that make every visit special.
+          </p>
+
+          <p>
+            Whether you're celebrating something wonderful or simply
+            enjoying an evening out, there's always a place for you here.
+          </p>
+
+          <a href="#experience" class="text-link">
+            Get to know us <span aria-hidden="true">→</span>
+          </a>
+
+          <div class="intro-signature">
+            <span class="signature-mark">B</span>
+            <span>Made for gathering.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow-line"></span>
+              A FEW FAVORITES
+            </span>
+            <h2>Made to be <span>savored.</span></h2>
+          </div>
+
+          <p>
+            Familiar favorites, fresh ingredients, and flavors
+            worth coming back for.
+          </p>
+        </div>
+
+        <div class="menu-filters" role="group" aria-label="Filter menu items">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Favorites</button>
+          <button class="filter-btn" type="button" data-filter="mains" aria-pressed="false">Main Courses</button>
+          <button class="filter-btn" type="button" data-filter="pizza" aria-pressed="false">Pizza</button>
+          <button class="filter-btn" type="button" data-filter="desserts" aria-pressed="false">Desserts</button>
+        </div>
+
+        <div class="menu-grid">
+
+          <article class="menu-card" data-category="mains">
+            <div class="menu-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80"
+                alt="Fresh pasta with herbs"
+                loading="lazy">
+              <span class="menu-tag">HOUSE FAVORITE</span>
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-title-row">
+                <h3>Garden Herb Pasta</h3>
+                <span class="menu-price">$16</span>
+              </div>
+              <p>Fresh herbs, delicate sauce, parmesan, and seasonal flavors.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="pizza">
+            <div class="menu-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80"
+                alt="Freshly baked artisan pizza"
+                loading="lazy">
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-title-row">
+                <h3>Classic Artisan Pizza</h3>
+                <span class="menu-price">$18</span>
+              </div>
+              <p>Golden crust, rich tomato, melted cheese, and fragrant basil.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="mains">
+            <div class="menu-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+                alt="Fresh colorful seasonal dish"
+                loading="lazy">
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-title-row">
+                <h3>Seasonal Garden Bowl</h3>
+                <span class="menu-price">$14</span>
+              </div>
+              <p>A colorful combination of fresh vegetables and vibrant dressing.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="desserts">
+            <div class="menu-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+                alt="Rich chocolate cake dessert"
+                loading="lazy">
+              <span class="menu-tag">SWEET FINISH</span>
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-title-row">
+                <h3>Chocolate Celebration Cake</h3>
+                <span class="menu-price">$9</span>
+              </div>
+              <p>Rich chocolate layers finished with a smooth, silky topping.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="menu-disclaimer">
+          Sample menu and prices for this portfolio project.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Experience banner -->
+    <section class="experience-section" id="experience">
+      <div class="experience-image"></div>
+      <div class="experience-overlay"></div>
+
+      <div class="container experience-content">
+        <span class="eyebrow hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          YOUR TABLE IS WAITING
+        </span>
+
+        <h2>Come for the food.<br><span>Stay for the feeling.</span></h2>
+
+        <p>
+          Slow down, share something delicious, and make
+          an ordinary day feel a little more special.
+        </p>
+
+        <a href="#reservation" class="btn btn-primary">
+          Plan Your Visit <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Reservation -->
+    <section class="reservation-section section-padding" id="reservation">
+      <div class="container reservation-grid">
+
+        <div class="reservation-info">
+          <span class="eyebrow">
+            <span class="eyebrow-line"></span>
+            LET'S MAKE IT SPECIAL
+          </span>
+
+          <h2>Save a seat<br><span>for yourself.</span></h2>
+
+          <p>
+            Planning a dinner, a celebration, or a little time
+            with your favorite people? Send us your reservation request.
+          </p>
+
+          <div class="contact-detail">
+            <span class="contact-icon" aria-hidden="true">◷</span>
+            <div>
+              <h3>Opening Hours</h3>
+              <p>Monday – Sunday</p>
+              <p>12:00 PM – 10:00 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-icon" aria-hidden="true">⌖</span>
+            <div>
+              <h3>Come Visit</h3>
+              <p>123 Garden Avenue</p>
+              <p>Your City, Your Country</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="reservation-form" id="reservationForm">
+          <h3>Request a Reservation</h3>
+          <p class="form-intro">Fill in your details to prepare your request.</p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guestName">Your Name</label>
+              <input id="guestName" name="guestName" type="text" placeholder="Full name" required minlength="2" autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="guestEmail">Email Address</label>
+              <input id="guestEmail" name="guestEmail" type="email" placeholder="you@example.com" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="reservationDate">Date</label>
+              <input id="reservationDate" name="reservationDate" type="date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="reservationTime">Time</label>
+              <select id="reservationTime" name="reservationTime" required>
+                <option value="">Choose a time</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>4:00 PM</option>
+                <option>5:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="guestCount">Number of Guests</label>
+            <select id="guestCount" name="guestCount" required>
+              <option value="">Select guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="7+">7+ Guests</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="guestMessage">Special Requests (Optional)</label>
+            <textarea id="guestMessage" name="guestMessage" rows="3" placeholder="Tell us anything we should know..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            Prepare Reservation Request <span aria-hidden="true">↗</span>
+          </button>
+
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          <p class="form-note">Demo form: submission does not contact a real restaurant.</p>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-strip" id="contact">
+      <div class="container contact-strip-inner">
+        <div>
+          <span class="eyebrow">A LITTLE TASTE OF BELLA VITA</span>
+          <h2>We'd love to welcome you.</h2>
+        </div>
+        <a href="#reservation" class="btn btn-light">
+          Get in Touch <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-main">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-mark">B</span>
+          <span class="logo-name">Bella <span>Vita</span></span>
+        </a>
+        <p>Good food, good company, and moments worth remembering.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#experience">Experience</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Visit Us</h3>
+        <p>123 Garden Avenue</p>
+        <p>Your City, Your Country</p>
+        <p>Daily · 12 PM – 10 PM</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Along</h3>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear">2026</span> Bella Vita. Portfolio demonstration.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
